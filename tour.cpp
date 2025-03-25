@@ -83,7 +83,6 @@ public:
 Tour tours[100];
 int tourCount = 0;
 
-// Add a new tour
 void addTour(int id, string destination, string date, int availableSeats) {
     tours[tourCount++] = {id, destination, date, availableSeats};
     cout << "Tour added successfully!\n";
@@ -99,7 +98,6 @@ Tour* searchTour(int id) {
     return nullptr;
 }
 
-// Update a tour
 void updateTour(int id, string destination, string date, int availableSeats) {
     Tour* tour = searchTour(id);
     if (tour) {
